@@ -82,6 +82,7 @@ Requires:       yast2-users
 Requires:       yast2-xml
 Recommends:     yast2-auth-client
 Recommends:     yast2-auth-server
+Recommends:     yast2-ftp-server
 Recommends:     yast2-iscsi-client
 Recommends:     yast2-journal
 Recommends:     yast2-ldap-client
@@ -99,8 +100,8 @@ Recommends:     yast2-samba-server
 Recommends:     yast2-tftp-server
 # #542936
 Recommends:     yast2-vpn
-# Recommend NTP at least until boo#936378 is fixed and YaST is not trying to configure a service that's not there
-Recommends:     ntp
+# Recommend Chrony at least until boo#936378 is fixed and YaST is not trying to configure a service that's not there
+Recommends:     chrony
 Suggests:       yast2-online-update-configuration
 Suggests:       autoyast2
 # yast2 clone_system is expected to be installed by default (sle-beta)
@@ -120,8 +121,6 @@ Suggests:       sbl
 Suggests:       Mesa
 Suggests:       i4l-isdnlog
 Suggests:       ypserv
-Suggests:       ntp
-Suggests:       ntp-doc
 Suggests:       install-initrd
 # for yast2-scanner
 # mandatory
